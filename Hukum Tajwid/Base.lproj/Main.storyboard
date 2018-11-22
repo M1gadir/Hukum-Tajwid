@@ -1,24 +1,954 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QJt-yI-IFJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
+        <scene sceneID="FVO-KP-Xwi">
+            <objects>
+                <viewController id="qa8-s1-v4A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGz-2Z-aKd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ha-Ty-uea">
+                                <rect key="frame" x="16" y="78" width="343" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Isti'azah atau taawuz (تعوذ) adalah lafaz: "A'uzubillahi minasy syaitaanir rajiim" (ﺍﻋﻮﺬ ﺑﺎﻟﻠﻪ ﻣﻦ الشيطان ﺍﻟﺮﺟﻴﻢ)
+
+manakala basmalah adalah lafaz: "Bismillahir rahmaanir rahiim" (ﺑﺴﻢ ﺍﻟﻠﻪ ﺍﻟﺮﺤﻤﻦ ﺍﻟﺮﺤﻴﻢ).
+
+Terdapat empat cara membaca iati'azah, basmalah dan surat:
+
+1. memutuskan isti'azah (berhenti) kemudian baru membaca basmalah,
+2. menyambungkan basmalah dengan surah tanpa berhenti,
+3. membaca isti'azah dan basmalah terus-menerus tanpa henti,
+4.  membaca isti'azah, basmalah dan awal surat terus-menerus tanpa berhenti.
+
+Terdapat empat cara membaca basmalah di antara dua surat. Tiga daripadanya adalah harus dan satu lagi adalah tidak harus. Yang harus adalah:
+
+1. memisahkan basmalah dengan surat,
+2. menghubungkan basmalah dengan awal surat,
+3. menghubungkan kesemuanya.
+
+Bacaan bagi yang tidak harus pula adalah:
+
+1. menghubungkan akhir surat dengan basmalah lalu berhenti. Kemudian, barulah membaca surat yang seterusnya tanpa basmalah. Walau bagaimanapun, tidak harus membaca demikian karena ditakuti bahwa ada yang menganggap basmalah adalah salah satu ayat daripada surat yang sebelumnya.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCM-xc-7di">
+                                <rect key="frame" x="320" y="20" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="rPZ-GB-gzD" kind="show" id="JgA-l8-PSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTR-ao-gQo">
+                                <rect key="frame" x="19" y="20" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="j6m-tJ-HKM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HTR-ao-gQo" firstAttribute="top" secondItem="ItV-iL-Fyx" secondAttribute="top" id="0d6-an-YuI"/>
+                            <constraint firstItem="HTR-ao-gQo" firstAttribute="leading" secondItem="ItV-iL-Fyx" secondAttribute="leading" constant="19" id="7x4-97-s6R"/>
+                            <constraint firstItem="ItV-iL-Fyx" firstAttribute="trailing" secondItem="VCM-xc-7di" secondAttribute="trailing" constant="23" id="LXt-OU-Iyr"/>
+                            <constraint firstItem="0ha-Ty-uea" firstAttribute="top" secondItem="ItV-iL-Fyx" secondAttribute="top" constant="58" id="WOY-rt-BeY"/>
+                            <constraint firstItem="ItV-iL-Fyx" firstAttribute="trailing" secondItem="0ha-Ty-uea" secondAttribute="trailing" constant="16" id="eeS-gD-PI3"/>
+                            <constraint firstItem="0ha-Ty-uea" firstAttribute="top" secondItem="VCM-xc-7di" secondAttribute="bottom" constant="28" id="fwA-9F-cko"/>
+                            <constraint firstItem="0ha-Ty-uea" firstAttribute="top" secondItem="HTR-ao-gQo" secondAttribute="bottom" constant="28" id="kpM-Uc-GEB"/>
+                            <constraint firstItem="0ha-Ty-uea" firstAttribute="leading" secondItem="ItV-iL-Fyx" secondAttribute="leading" constant="16" id="mWu-Fa-raF"/>
+                            <constraint firstItem="ItV-iL-Fyx" firstAttribute="bottom" secondItem="0ha-Ty-uea" secondAttribute="bottom" constant="20" id="oer-6R-PTi"/>
+                            <constraint firstItem="VCM-xc-7di" firstAttribute="leading" secondItem="HTR-ao-gQo" secondAttribute="trailing" constant="260" id="p6T-Qt-p74"/>
+                            <constraint firstItem="VCM-xc-7di" firstAttribute="top" secondItem="ItV-iL-Fyx" secondAttribute="top" id="w9D-am-9nk"/>
+                            <constraint firstItem="VCM-xc-7di" firstAttribute="leading" secondItem="HTR-ao-gQo" secondAttribute="trailing" constant="260" id="yqz-T6-0mz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ItV-iL-Fyx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="WAK-Xm-xJr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewe-jK-Dnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lWc-P6-s1C">
+            <objects>
+                <navigationController id="QJt-yI-IFJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2GM-7f-ZXe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aTo-jF-m28"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmc-Sg-CG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="-1166"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hukum_Tajwid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abstract-background-4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ntu-FK-ONN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Hukum Tajwid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRx-Mi-ldn">
+                                <rect key="frame" x="85" y="56" width="205" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-QW-Y8K">
+                                <rect key="frame" x="85" y="243" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum Nun mati Dan Tanwin">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QNf-Li-7VK" kind="presentation" id="MuQ-yc-3da"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-zf-lpE">
+                                <rect key="frame" x="85" y="205" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Dalil Tajwid">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rPZ-GB-gzD" kind="presentation" id="gqS-4b-PDx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLE-Re-oNE">
+                                <rect key="frame" x="85" y="281" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum Mim mati">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ykq-ly-knV" kind="presentation" id="5Me-ad-8Di"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yo-kd-ANN">
+                                <rect key="frame" x="85" y="432" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum Mad">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Lm-gO-3bv" kind="presentation" id="rwV-4R-P2e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tz-tw-vAh">
+                                <rect key="frame" x="85" y="502" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Qalqalah">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zd2-tv-Obr" kind="presentation" id="3Fa-ju-KMs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2v-o0-LC6">
+                                <rect key="frame" x="85" y="395" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum Idgham">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ge3-P9-bV3" kind="presentation" id="zVr-pJ-0c4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGw-lE-BWs">
+                                <rect key="frame" x="85" y="537" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Waqaf(وقف)">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0tG-9Y-5Fl" kind="presentation" id="zqT-3x-hoo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jp-MD-jf3">
+                                <rect key="frame" x="85" y="467" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum Ra'">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9RV-D9-vVr" kind="presentation" id="WHF-gi-qmt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXE-V0-zo3">
+                                <rect key="frame" x="85" y="167" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum ta'awuz dan basmalah">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qa8-s1-v4A" kind="presentation" id="s6l-H4-SIp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="754" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-JD-vx1">
+                                <rect key="frame" x="85" y="129" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Arti Tajwid">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Sw-v7-AHB" kind="presentation" id="ve1-An-Zs5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYU-Og-4IC">
+                                <rect key="frame" x="85" y="357" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum alif lam ma'rifah">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3x0-9n-yUf" kind="presentation" id="aV0-Ps-hIv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-0q-hrc">
+                                <rect key="frame" x="85" y="575" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Macam Macam Waqaf">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pgp-nh-mki" kind="presentation" id="nlH-l3-Li0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="754" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCJ-uU-M6w">
+                                <rect key="frame" x="85" y="319" width="205" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hukum Mim dan Tasydid">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fdh-hW-qsB" kind="presentation" id="O4v-wf-8bt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fMe-0q-hrc" firstAttribute="trailing" secondItem="nGw-lE-BWs" secondAttribute="trailing" id="0F9-DG-hzl"/>
+                            <constraint firstItem="wXE-V0-zo3" firstAttribute="trailing" secondItem="8K6-zf-lpE" secondAttribute="trailing" id="1XX-jZ-vK6"/>
+                            <constraint firstItem="VYU-Og-4IC" firstAttribute="leading" secondItem="UCJ-uU-M6w" secondAttribute="leading" id="1pJ-zi-7sO"/>
+                            <constraint firstItem="oLE-Re-oNE" firstAttribute="leading" secondItem="UCJ-uU-M6w" secondAttribute="leading" id="3ZS-ui-Gv9"/>
+                            <constraint firstItem="1jp-MD-jf3" firstAttribute="leading" secondItem="6Yo-kd-ANN" secondAttribute="leading" id="69a-Q7-XFL"/>
+                            <constraint firstItem="oLE-Re-oNE" firstAttribute="trailing" secondItem="UCJ-uU-M6w" secondAttribute="trailing" id="Ct1-Iz-S20"/>
+                            <constraint firstItem="1jp-MD-jf3" firstAttribute="trailing" secondItem="6Yo-kd-ANN" secondAttribute="trailing" id="D2w-oq-uJS"/>
+                            <constraint firstItem="JRx-Mi-ldn" firstAttribute="trailing" secondItem="MGX-JD-vx1" secondAttribute="trailing" id="D8d-8R-1Dw"/>
+                            <constraint firstItem="Ntu-FK-ONN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DiJ-Ap-nkO"/>
+                            <constraint firstItem="0Tz-tw-vAh" firstAttribute="trailing" secondItem="1jp-MD-jf3" secondAttribute="trailing" id="EcM-aR-FeH"/>
+                            <constraint firstItem="UCJ-uU-M6w" firstAttribute="top" secondItem="oLE-Re-oNE" secondAttribute="bottom" constant="8" id="GLl-8M-EhF"/>
+                            <constraint firstItem="JXw-QW-Y8K" firstAttribute="leading" secondItem="oLE-Re-oNE" secondAttribute="leading" id="Hff-Hz-9hK"/>
+                            <constraint firstItem="JRx-Mi-ldn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="IJv-HO-KiS"/>
+                            <constraint firstItem="JXw-QW-Y8K" firstAttribute="trailing" secondItem="oLE-Re-oNE" secondAttribute="trailing" id="Ibe-Hx-ee0"/>
+                            <constraint firstItem="8K6-zf-lpE" firstAttribute="leading" secondItem="JXw-QW-Y8K" secondAttribute="leading" id="Jch-BY-cNd"/>
+                            <constraint firstItem="JRx-Mi-ldn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="M5C-LF-584"/>
+                            <constraint firstItem="V2v-o0-LC6" firstAttribute="trailing" secondItem="VYU-Og-4IC" secondAttribute="trailing" id="MJH-1d-6WZ"/>
+                            <constraint firstItem="VYU-Og-4IC" firstAttribute="top" secondItem="UCJ-uU-M6w" secondAttribute="bottom" constant="8" id="NWI-Kv-FJV"/>
+                            <constraint firstItem="8K6-zf-lpE" firstAttribute="top" secondItem="wXE-V0-zo3" secondAttribute="bottom" constant="8" id="NkV-Wh-Epn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRx-Mi-ldn" secondAttribute="trailing" constant="85" id="OMk-e2-RIY"/>
+                            <constraint firstItem="6Yo-kd-ANN" firstAttribute="leading" secondItem="V2v-o0-LC6" secondAttribute="leading" id="PBY-V2-F5c"/>
+                            <constraint firstItem="JRx-Mi-ldn" firstAttribute="leading" secondItem="MGX-JD-vx1" secondAttribute="leading" id="PM4-cu-CUM"/>
+                            <constraint firstItem="nGw-lE-BWs" firstAttribute="leading" secondItem="0Tz-tw-vAh" secondAttribute="leading" id="Qsf-c0-db9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ntu-FK-ONN" secondAttribute="bottom" id="Rwm-PA-i85"/>
+                            <constraint firstItem="nGw-lE-BWs" firstAttribute="top" secondItem="0Tz-tw-vAh" secondAttribute="bottom" constant="5" id="T4X-OP-U6v"/>
+                            <constraint firstItem="MGX-JD-vx1" firstAttribute="leading" secondItem="wXE-V0-zo3" secondAttribute="leading" id="TlC-J6-wPj"/>
+                            <constraint firstItem="fMe-0q-hrc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="TlJ-o4-8HW"/>
+                            <constraint firstItem="6Yo-kd-ANN" firstAttribute="top" secondItem="V2v-o0-LC6" secondAttribute="bottom" constant="7" id="UY0-c6-Fhc"/>
+                            <constraint firstItem="fMe-0q-hrc" firstAttribute="leading" secondItem="nGw-lE-BWs" secondAttribute="leading" id="WGw-oD-rnM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ntu-FK-ONN" secondAttribute="trailing" id="aOe-sM-CIr"/>
+                            <constraint firstItem="V2v-o0-LC6" firstAttribute="top" secondItem="VYU-Og-4IC" secondAttribute="bottom" constant="8" id="cCy-sW-21p"/>
+                            <constraint firstItem="oLE-Re-oNE" firstAttribute="top" secondItem="JXw-QW-Y8K" secondAttribute="bottom" constant="8" id="cyL-WQ-gv3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fMe-0q-hrc" secondAttribute="bottom" constant="62" id="dng-7q-a1m"/>
+                            <constraint firstItem="V2v-o0-LC6" firstAttribute="leading" secondItem="VYU-Og-4IC" secondAttribute="leading" id="fVW-Sa-b1U"/>
+                            <constraint firstItem="8K6-zf-lpE" firstAttribute="trailing" secondItem="JXw-QW-Y8K" secondAttribute="trailing" id="hWj-Vn-h5H"/>
+                            <constraint firstItem="UCJ-uU-M6w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iBM-01-yqH"/>
+                            <constraint firstItem="MGX-JD-vx1" firstAttribute="top" secondItem="JRx-Mi-ldn" secondAttribute="bottom" constant="8" id="k4I-NB-tUw"/>
+                            <constraint firstItem="JXw-QW-Y8K" firstAttribute="top" secondItem="8K6-zf-lpE" secondAttribute="bottom" constant="8" id="kse-Ng-kwr"/>
+                            <constraint firstItem="wXE-V0-zo3" firstAttribute="leading" secondItem="8K6-zf-lpE" secondAttribute="leading" id="ljQ-9g-6Du"/>
+                            <constraint firstItem="6Yo-kd-ANN" firstAttribute="trailing" secondItem="V2v-o0-LC6" secondAttribute="trailing" id="mCe-oT-DV4"/>
+                            <constraint firstItem="1jp-MD-jf3" firstAttribute="top" secondItem="6Yo-kd-ANN" secondAttribute="bottom" constant="5" id="mfu-y4-Q6H"/>
+                            <constraint firstItem="0Tz-tw-vAh" firstAttribute="top" secondItem="1jp-MD-jf3" secondAttribute="bottom" constant="5" id="qtx-zg-fHb"/>
+                            <constraint firstItem="Ntu-FK-ONN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rLc-QO-OPO"/>
+                            <constraint firstItem="VYU-Og-4IC" firstAttribute="trailing" secondItem="UCJ-uU-M6w" secondAttribute="trailing" id="uZe-08-4oU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fMe-0q-hrc" secondAttribute="trailing" constant="85" id="vpn-dY-uH1"/>
+                            <constraint firstItem="nGw-lE-BWs" firstAttribute="trailing" secondItem="0Tz-tw-vAh" secondAttribute="trailing" id="wDh-al-AYR"/>
+                            <constraint firstItem="wXE-V0-zo3" firstAttribute="top" secondItem="MGX-JD-vx1" secondAttribute="bottom" constant="8" id="weL-jM-OwN"/>
+                            <constraint firstItem="UCJ-uU-M6w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xd7-IC-akH"/>
+                            <constraint firstItem="fMe-0q-hrc" firstAttribute="top" secondItem="nGw-lE-BWs" secondAttribute="bottom" constant="8" id="yon-dN-hD5"/>
+                            <constraint firstItem="0Tz-tw-vAh" firstAttribute="leading" secondItem="1jp-MD-jf3" secondAttribute="leading" id="yyt-66-X8h"/>
+                            <constraint firstItem="MGX-JD-vx1" firstAttribute="trailing" secondItem="wXE-V0-zo3" secondAttribute="trailing" id="zEV-6H-MJ4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" leftItemsSupplementBackButton="YES" id="oSv-lH-jaf">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="T7a-Q4-jtT"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="897" y="-1166"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2pA-gq-map">
+            <objects>
+                <viewController id="QNf-Li-7VK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qme-Kd-Fik">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-on-3sf">
+                                <rect key="frame" x="16" y="66" width="343" height="479"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hukum Nun Mati (sukun) dan tanwin adalah salah satu tajwid yang terdapat dalam Al-Qur'an. Hukum ini berlaku jika nun mati atau tanwin bertemu huruf-huruf tertentu.
+
+Hukum ini terdiri dari 4 jenis, yaitu:  1. Izhar
+Jika nun mati atau tanwin bertemu/menghadap salah satu huruf izhar yaitu ح,خ,ع,غ,أ,ھ cara membacanya jelas, dan terang tidak diperbolehkan untuk mendengung.
+
+2. Idgam
+Hukum bacaan ini terbagi menjadi dua bagian, yaitu:
+
+- Idgam bigunnah
+Jika nun mati atau tanwin bertemu huruf huruf seperti: mim (م), nun (ن) wau (و), dan ya' (ي), ia harus dibaca dengan dengung.
+Contoh: فِيْ عَمَدٍ مُّمَدَّدَةٍ harus dibaca Fī ʿamadim mumaddadah.
+
+- Idgam bilagunnah
+Jika nun mati atau tanwin bertemu huruf-huruf seperti ra' (ر) dan lam (ل), maka ia harus dibaca tanpa dengung.
+Contoh: مَنْ لَمْ harus dibaca Mal lam
+
+- Pengecualian
+Jika nun mati atau tanwin bertemu dengan keenam huruf idgam tersebut tetapi ditemukan dalam satu kata, seperti بُنْيَانٌ, اَدُّنْيَا, قِنْوَانٌ, dan صِنْوَانٌ, maka nun mati atau tanwin tersebut dibaca jelas.
+
+3. Iqlab
+Hukum ini terjadi apabila nun mati atau tanwin bertemu dengan huruf ba' (ب). Dalam bacaan ini, bacaan nun mati atau tanwin berubah menjadi bunyi mim.
+Contoh: لَيُنۢبَذَنَّ harus dibaca Layumbażanna
+
+4. Ikhfa' haqiqi
+Jika nun mati atau tanwin bertemu dengan huruf-huruf seperti ta'(ت), tsa' (ث), jim (ج), dal (د), żal (ذ), zai (ز), sin (س), syin (ش), sad (ص), dad (ض), tha (ط), zha (ظ), fa' (ﻑ), qaf (ق), dan kaf (ك), ia harus dibaca samar-samar (antara Izhar dan Idgam)
+Contoh: نَقْعًا فَوَسَطْنَ
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmx-cY-x6Z">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="8gD-A2-kp5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO8-4J-Y2d">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ykq-ly-knV" kind="show" id="ews-GO-pQR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mKM-oa-CoE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2ZR-aD-7j2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrr-nH-4Zk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="WOs-16-qye">
+            <objects>
+                <viewController id="ykq-ly-knV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y1J-2s-Qwt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ttv-zQ-ZcU">
+                                <rect key="frame" x="16" y="98" width="343" height="535"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hukum mim mati adalah salah satu tajwid yang terdapat dalam Al-Qur'an. Hukum ini berlaku jika mim mati bertemu huruf-huruf tertentu.
+
+Hukum ini terdiri dari tiga jenis, yaitu:  1. Ikhfa' Syafawi (ﺇﺧﻔﺎﺀ ﺷﻔﻮﻱ)
+Apabila mim mati (مْ) bertemu dengan ba (ب), maka cara membacanya harus dibunyikan samar-samar di bibir dan didengungkan.
+Contoh: (فَاحْكُم بَيْنَهُم) (تَرْمِيهِم بِحِجَارَةٍ) (وَكَلْبُهُم بَاسِطٌ)
+
+2. Idgham Mithlain ( إدغام ميمى) = Idgham Mimi/Mitsliy
+Apabila mim sukun(مْ) bertemu dengan mim (م), maka cara membacanya adalah seperti menyuarakan mim rangkap atau ditasyidkan dan wajib dibaca dengung. Idgham mithlain juga dikenali sebagai idgham mimi atau mutamasilain.
+Contoh: (أَم مَنْ) (كَمْ مِن فِئَةٍ
+
+3. Idzhar Syafawi (ﺇﻇﻬﺎﺭ ﺷﻔﻮﻱ)
+Apabila mim mati (مْ) bertemu dengan salah satu huruf hijaiyyah selain huruf mim (مْ) dan ba (ب), maka cara membacanya dengan jelas di bibir dan mulut tertutup.
+Contoh: (لَعَلَّكُمْ تَتَّقُونَ) (تَمْسُونَ)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cu-tw-f5r">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Pcn-Pe-eAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwU-Aj-tYL">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="fdh-hW-qsB" kind="show" id="ofU-7l-4AZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="31S-js-r7i"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="3d6-54-vF6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHE-cI-aKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="JdS-hB-tJj">
+            <objects>
+                <viewController id="7Lm-gO-3bv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEz-h5-75j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UeI-UN-5aW">
+                                <rect key="frame" x="16" y="197" width="343" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.57328232020547942" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Mad berarti melanjutkan atau melebihkan. Dari segi istilah ulama tajwid dan ahli bacaan, mad bermakna memanjangkan suara dengan lanjutan menurut kedudukan salah satu dari huruf mad. Terdapat dua bagian mad, yaitu mad asli dan mad far'i. Terdapat tiga huruf mad yaitu alif, wau, dan ya' dan huruf tersebut haruslah berbaris mati atau saktah. Panjang pendeknya bacaan mad diukur dengan menggunakan haraka</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXG-W5-X9y">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="cD2-tg-G7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvS-xN-r0h">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="9RV-D9-vVr" kind="show" id="ckv-RX-wdX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="q5i-pp-Cs9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zfn-bq-BH8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x55-O4-Jbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.2" y="852.3238380809596"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Xu8-w3-Mle">
+            <objects>
+                <viewController id="fdh-hW-qsB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HMH-ya-2ep">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LvX-l5-qhg">
+                                <rect key="frame" x="16" y="176" width="343" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hukum mim dan nun tasydid juga disebut sebagai wajibal ghunnah (ﻭﺍﺟﺐ ﺍﻟﻐﻨﻪ) yang bermakna bahwa pembaca wajib untuk mendengungkan bacaan. Maka jelaslah yang bacaan bagi kedua-duanya adalah didengungkan. Hukum ini berlaku bagi setiap huruf mim dan nun yang memiliki tanda syadda atau bertasydid (ﻡّ dan نّ).
+
+Contoh: ﻣِﻦَ ﺍﻟْﺠِﻨﱠﺔ ﻭَﺍﻟﻨﱠﺎﺱِ</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qL9-BF-rXj">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="PFk-mJ-Rmn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsz-kN-56A">
+                                <rect key="frame" x="317" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="3x0-9n-yUf" kind="show" id="11j-hZ-YnU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1fH-4r-grF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Pze-2Z-w6N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3s-iw-Thp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="850.52473763118451"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="7lk-CY-OrU">
+            <objects>
+                <viewController id="3x0-9n-yUf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGG-dX-yC5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="01q-11-m9g">
+                                <rect key="frame" x="16" y="141" width="343" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Alif lam ma'rifah  adalah dua huruf yang ditambah pada pangkal/awal dari kata yang bermakna nama atau isim .Terdapat dua jenis alif lam ma'rifah yaitu qamariah dan syamsiah.
+
+Alif lam qamariah  ialah lam yang diikuti oleh 14 huruf hijaiah, seperti: alif/hamzah(ء), ba' (ب), jim (ج), ha' (ح), kha' (خ), 'ain (ع), ghain (غ), fa' (ف), qaf (ق), kaf (ك), mim (م), wau (و), ha' (ﮬ) dan ya' (ي). Hukum alif lam qamariah diambil dari bahasa arab yaitu al-qamar (ﺍﻟﻘﻤﺮ) yang artinya adalah bulan. Maka dari itu, cara membaca alif lam ini adalah dibacakan secara jelas tanpa meleburkan bacaannya.
+
+Alif lam syamsiah  ialah lam yang diikuti oleh 14 huruf hijaiah seperti: ta' (ت), tha' (ث), dal (د), dzal (ذ), ra' (ر), zai (ز), sin (س), syin (ش), sod (ص), dhod (ض), tho (ط), zho (ظ), lam (ل) dan nun (ن). Nama asy-syamsiah diambil dari bahasa Arab (ﺍﻟﺸﻤﺴﻴﻪ) yang artinya adalah matahari. Maka dari itu, cara membaca alif lam ini tidak dibacakan melainkan dileburkan kepada huruf setelahnya.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQV-xI-IRa">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="IwV-h3-KuO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-NT-Ngy">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ge3-P9-bV3" kind="show" id="Vga-vR-lCS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L3r-3O-a5C"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="udc-wa-cMc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kr6-vE-zw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440.8000000000002" y="851.42428785607206"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="X3N-g5-uYD">
+            <objects>
+                <viewController id="9RV-D9-vVr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S2s-Ae-icp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTa-uU-9tx">
+                                <rect key="frame" x="19" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="57Z-I6-kkg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qo-j6-pNv">
+                                <rect key="frame" x="320" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Zd2-tv-Obr" kind="show" id="817-Jf-057"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kW1-b3-ZDL">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.6795269691780822" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Hukum ra' adalah hukum bagaimana membunyikan huruf ra' dalam bacaan. Terdapat tiga cara yaitu kasar atau tebal, halus atau tipis, atau harus dikasarkan dan ditipiskan.
+
+Bacaan ra' harus dikasarkan apabila:
+
+1. Setiap ra' yang berharakat atas atau fathah.
+Contoh: ﺭَﺑﱢﻨَﺎ 
+2. Setiap ra' yang berbaris mati atau berharakat sukun dan huruf sebelumnya berbaris atas atau fathah.
+Contoh: ﻭَﺍﻻَﺭْﺽ 
+3. Ra' berbaris mati yang huruf sebelumnya berbaris bawah atau kasrah.
+Contoh: ٱﺭْﺟِﻌُﻮْﺍ 
+4. Ra' berbaris mati dan sebelumnya huruf yang berbaris bawah atau kasrah tetapi ra' tadi berjumpa dengan huruf isti'la'.
+Contoh: ﻣِﺮْﺻَﺎﺪ 
+Bacaan ra' yang ditipiskan adalah apabila:
+
+5. Setiap ra' yang berbaris bawah atau kasrah.
+Contoh: ﺭِﺟَﺎﻝٌ 
+6. Setiap ra' yang sebelumnya terdapat mad lain
+Contoh: ﺧَﻴْﺮٌ 
+7. Ra' mati yang sebelumnya juga huruf berbaris bawah atau kasrah tetapi tidak berjumpa dengan huruf isti'la'.
+Contoh: ﻓِﺮْﻋَﻮﻦَ 
+8. Bacaan ra' yang harus dikasarkan dan ditipiskan adalah apabila setiap ra' yang berbaris mati yang huruf sebelumnya berbaris bawah dan kemudian berjumpa dengan salah satu huruf isti'la'.
+
+Contoh: ﻓِﺮْﻕ 
+Isti'la' (ﺍﺳﺘﻌﻼ ﺀ): terdapat tujuh huruf yaitu kha (خ), ghain (غ), shad (ص), dhad (ض), tha (ط), qaf (ق), dan zha (ظ).</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kW1-b3-ZDL" firstAttribute="trailing" secondItem="S2s-Ae-icp" secondAttribute="trailingMargin" constant="16" id="Ini-tS-E7O"/>
+                            <constraint firstItem="kW1-b3-ZDL" firstAttribute="leading" secondItem="S2s-Ae-icp" secondAttribute="leadingMargin" constant="-16" id="gL8-p5-nrA"/>
+                            <constraint firstAttribute="bottom" secondItem="kW1-b3-ZDL" secondAttribute="bottom" id="mHP-AH-P1F"/>
+                            <constraint firstItem="kW1-b3-ZDL" firstAttribute="top" secondItem="jSJ-Ad-IfT" secondAttribute="top" constant="60" id="pI1-nW-iBo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jSJ-Ad-IfT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="t9X-58-tAr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqD-Uc-Tf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="851.42428785607206"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pMG-Gw-3NC">
+            <objects>
+                <viewController id="rPZ-GB-gzD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ByX-hx-tGT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dob-9Y-WHl">
+                                <rect key="frame" x="16" y="89" width="343" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Adapun dalil dalil yang mewajibkan membaca al-Quran dengan tajwid antara lain:
+
+1. ada pun dalil yang pertama di ambil dari al-Quran. Allah swt berfirman yang artinya “Dan bacalah Al-Qur’an itu dengan perlahan/tartil (bertajwid)”[QS:Al-Muzzammil (73): 4]. Ayat ini jelas menunjukkan bahwa Allah SWT memerintahkan Nabi Muhammad untuk membaca al-Quran yang diturunkan kepadanya dengan tartil, yaitu memperindah pengucapan setiap huruf-hurufnya (bertajwid).
+2. dalil as sunah ( hadist ). Dalam hadits yang diriwayatkan dari Ummu Salamah r.a.(istri Nabi SAW), ketika dia ditanya tentang bagaiman bacaan dan salat Rasulullah SAW, maka dia menjawab: ”Ketahuilah bahwa Baginda s.a.w. salat kemudian tidur yang lamanya sama seperti ketika dia salat tadi, kemudian Baginda kembali salat yang lamanya sama seperti ketika dia tidur tadi, kemudian tidur lagi yang lamanya sama seperti ketika dia salat tadi hingga menjelang shubuh. Kemudian dia (Ummu Salamah) mencontohkan cara bacaan Rasulullah s.a.w. dengan menunjukkan (satu) bacaan yang menjelaskan (ucapan) huruf-hurufnya satu persatu.” (Hadits 2847 Jamik At-Tirmizi).
+3. yang ketiga adalah dalil ijma ulama. adalah telah sepakat para ulama dari zaman rasulullah sampai zaman sekarang, bahwa membaca alqur’an dengan bertajwid adalah sesuatu yang fardhu dan wajib.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-GU-RjX">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="QNf-Li-7VK" kind="show" id="nrN-YD-CBF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-K6-iHF">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="prf-tM-B2A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SwB-hQ-QRp" firstAttribute="trailing" secondItem="dob-9Y-WHl" secondAttribute="trailing" constant="16" id="0ce-oR-vcA"/>
+                            <constraint firstItem="dob-9Y-WHl" firstAttribute="top" secondItem="ZI8-GU-RjX" secondAttribute="bottom" constant="39" id="HzX-LG-Nba"/>
+                            <constraint firstItem="SwB-hQ-QRp" firstAttribute="trailing" secondItem="ZI8-GU-RjX" secondAttribute="trailing" constant="16" id="KJp-XV-UDj"/>
+                            <constraint firstItem="ZI8-GU-RjX" firstAttribute="leading" secondItem="1kd-K6-iHF" secondAttribute="trailing" constant="270" id="VOf-D2-Sjw"/>
+                            <constraint firstItem="dob-9Y-WHl" firstAttribute="leading" secondItem="SwB-hQ-QRp" secondAttribute="leading" constant="16" id="ejP-7p-R8G"/>
+                            <constraint firstItem="1kd-K6-iHF" firstAttribute="leading" secondItem="SwB-hQ-QRp" secondAttribute="leading" constant="16" id="f1u-iT-9N1"/>
+                            <constraint firstItem="ZI8-GU-RjX" firstAttribute="leading" secondItem="1kd-K6-iHF" secondAttribute="trailing" constant="270" id="j0z-gT-3DE"/>
+                            <constraint firstItem="dob-9Y-WHl" firstAttribute="top" secondItem="SwB-hQ-QRp" secondAttribute="top" constant="69" id="m67-pN-XIN"/>
+                            <constraint firstItem="ZI8-GU-RjX" firstAttribute="top" secondItem="SwB-hQ-QRp" secondAttribute="top" id="mNj-2x-wT4"/>
+                            <constraint firstItem="dob-9Y-WHl" firstAttribute="top" secondItem="1kd-K6-iHF" secondAttribute="bottom" constant="39" id="pqX-Ec-q4g"/>
+                            <constraint firstItem="1kd-K6-iHF" firstAttribute="top" secondItem="SwB-hQ-QRp" secondAttribute="top" id="qKL-sc-cmr"/>
+                            <constraint firstItem="SwB-hQ-QRp" firstAttribute="bottom" secondItem="dob-9Y-WHl" secondAttribute="bottom" constant="20" id="xv2-zm-7tQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SwB-hQ-QRp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ipH-Ls-XSe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="th0-Dn-oKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.2" y="130.88455772113943"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Q3A-du-iK3">
+            <objects>
+                <viewController id="Zd2-tv-Obr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNP-wM-4IJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eB0-nn-a1s">
+                                <rect key="frame" x="16" y="130" width="343" height="439"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Qalqalah (ﻗﻠﻘﻠﻪ) adalah bacaan pada huruf-huruf qalqalah dengan bunyi seakan-akan berdetik atau memantul. Huruf qalqalah ada lima yaitu qaf (ق), tha (ط), ba' (ب), jim (ج), dan dal (د). Qalqalah terbagi menjadi dua jenis:
+
+1. Qalqalah kecil yaitu apabila salah satu daripada huruf qalqalah itu berbaris mati dan baris matinya adalah asli karena harakat sukun dan bukan karena waqaf.
+Contoh: ﻴَﻄْﻤَﻌُﻮﻥَ, ﻴَﺪْﻋُﻮﻥَ 
+2. Qalqalah besar yaitu apabila salah satu daripada huruf qalqalah itu dimatikan karena waqaf atau berhenti. Dalam keadaan ini, qalqalah dilakukan apabila bacaan diwaqafkan tetapi tidak diqalqalahkan apabila bacaan diteruskan.
+Contoh: ٱﻟْﻔَﻟَﻖِ, ﻋَﻟَﻖٍ</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDh-gD-NI0">
+                                <rect key="frame" x="19" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="nbd-Md-MhR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCY-Z4-o7C">
+                                <rect key="frame" x="320" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="0tG-9Y-5Fl" kind="show" id="UeY-6m-wur"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P5i-wm-7UE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hbT-LR-eME"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQt-O0-d7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="1557.5712143928038"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="B8B-bU-BpR">
+            <objects>
+                <viewController id="0tG-9Y-5Fl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nov-8k-TCT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n6N-Rd-pdH">
+                                <rect key="frame" x="16" y="92" width="343" height="555"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Waqaf dari sudut bahasa ialah berhenti atau menahan, manakala dari sudut istilah tajwid ialah menghentikan bacaan sejenak dengan memutuskan suara di akhir perkataan untuk bernapas dengan niat ingin menyambungkan kembali bacaan. Terdapat empat jenis waqaf yaitu:
+
+ﺗﺂﻡّ (taamm)1. waqaf sempurna - yaitu mewaqafkan atau memberhentikan pada suatu bacaan yang dibaca secara sempurna, tidak memutuskan di tengah-tengah ayat atau bacaan, dan tidak memengaruhi arti dan makna dari bacaan karena tidak memiliki kaitan dengan bacaan atau ayat yang sebelumnya maupun yang sesudahnya 
+ﻛﺎﻒ (kaaf)2. waqaf memadai - yaitu mewaqafkan atau memberhentikan pada suatu bacaan secara sempurna, tidak memutuskan di tengah-tengah ayat atau bacaan, namun ayat tersebut masih berkaitan makna dan arti dari ayat sesudahnya;
+ﺣﺴﻦ (Hasan) - waqaf baik - yaitu mewaqafkan bacaan atau ayat tanpa memengaruhi makna atau arti, namun bacaan tersebut masih berkaitan dengan bacaan sesudahnya; 
+ﻗﺒﻴﺢ (Qabiih)3. waqaf buruk - yaitu mewaqafkan atau memberhentikan bacaan secara tidak sempurna atau memberhentikan bacaan di tengah-tengah ayat, wakaf ini harus dihindari karena bacaan yang diwaqafkan masih berkaitan lafaz dan maknanya dengan bacaan yang lain.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUY-PJ-Of4">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="NXh-Dw-dNt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msk-gj-knk">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="pgp-nh-mki" kind="show" id="nTo-s0-TpR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jIM-av-jyK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="RNz-f7-SOr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQN-cJ-bpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440.8000000000002" y="1557.5712143928038"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="qsd-Iy-LZk">
+            <objects>
+                <viewController id="pgp-nh-mki" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5KP-My-1Ed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RxC-vQ-qz4">
+                                <rect key="frame" x="16" y="103" width="343" height="544"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">1. Tanda mim ( مـ ) disebut juga dengan Waqaf Lazim. yaitu berhenti di akhir kalimat sempurna. Wakaf Lazim disebut juga Wakaf Taamm (sempurna) karena wakaf terjadi setelah kalimat sempurna dan tidak ada kaitan lagi dengan kalimat sesudahnya.   2. Tanda mim ( م ), memiliki kemiripan dengan tanda tajwid iqlab, namun sangat jauh berbeda dengan fungsi dan maksudnya; 
+3. tanda tho ( ﻁ ) adalah tanda Waqaf Mutlaq dan haruslah berhenti. 
+4. tanda jim ( ﺝ ) adalah Waqaf Jaiz. Lebih baik berhenti seketika di sini walaupun diperbolehkan juga untuk tidak berhenti. 
+5. tanda zha ( ﻇ ) bermaksud lebih baik tidak berhenti; 
+6. tanda sad ( ﺹ ) disebut juga dengan Waqaf Murakhkhas, menunjukkan bahwa lebih baik untuk tidak berhenti namun diperbolehkan berhenti saat darurat tanpa mengubah makna. Perbedaan antara hukum tanda zha dan sad adalah pada fungsinya, dalam kata lain lebih diperbolehkan berhenti pada waqaf sad; 
+7. tanda sad-lam-ya' ( ﺻﻠﮯ ) merupakan singkatan dari "Al-washl Awlaa" yang bermakna "wasal atau meneruskan bacaan adalah lebih baik", maka dari itu meneruskan bacaan tanpa mewaqafkannya adalah lebih baik; 
+8. tanda qaf ( ﻕ ) merupakan singkatan dari "Qiila alayhil waqf" yang bermakna "telah dinyatakan boleh berhenti pada wakaf sebelumnya", maka dari itu lebih baik meneruskan bacaan walaupun boleh diwaqafkan; 
+9. tanda sad-lam ( ﺼﻞ ) merupakan singkatan dari "Qad yuushalu" yang bermakna "kadang kala boleh diwasalkan", maka dari itu lebih baik berhenti walau kadang kala boleh diwasalkan; 
+10. tanda Qif ( ﻗﻴﻒ ) bermaksud berhenti! yakni lebih diutamakan untuk berhenti. Tanda tersebut biasanya muncul pada kalimat yang biasanya pembaca akan meneruskannya tanpa berhenti; 
+11. tanda sin ( س ) atau tanda Saktah ( ﺳﮑﺘﻪ ) menandakan berhenti seketika tanpa mengambil napas. Dengan kata lain, pembaca haruslah berhenti seketika tanpa mengambil napas baru untuk meneruskan bacaan; 
+12. tanda Waqfah ( ﻭﻗﻔﻪ ) bermaksud sama seperti waqaf saktah ( ﺳﮑﺘﻪ ), namun harus berhenti lebih lama tanpa mengambil napas; 
+13. tanda Laa ( ﻻ ) bermaksud "Jangan berhenti!". Tanda ini muncul kadang-kala pada penghujung mahupun pertengahan ayat. Jika ia muncul di pertengahan ayat, maka tidak dibenarkan untuk berhenti dan jika berada di penghujung ayat, pembaca tersebut boleh berhenti atau tidak; 
+14. tanda kaf ( ﻙ ) merupakan singkatan dari "Kadzaalik" yang bermakna "serupa". Dengan kata lain, makna dari waqaf ini serupa dengan waqaf yang sebelumnya muncul; 
+15. tanda bertitik tiga ( ... ...) yang disebut sebagai Waqaf Muraqabah atau Waqaf Ta'anuq (Terikat). Waqaf ini akan muncul sebanyak dua kali di mana-mana saja dan cara membacanya adalah harus berhenti di salah satu tanda tersebut. Jika sudah berhenti pada tanda pertama, tidak perlu berhenti pada tanda kedua dan sebaliknya.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-Ze-ycz">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="p19-M1-a36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcI-pa-vLX">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c7Z-DQ-G0F"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Mhv-s0-eI1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2w-Dc-YHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128.8000000000002" y="1557.5712143928038"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="3k8-lV-qJR">
+            <objects>
+                <viewController id="ge3-P9-bV3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m7j-oX-eVj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kkg-GW-MIN">
+                                <rect key="frame" x="16" y="167" width="343" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Idgham (ﺇﺩﻏﺎﻡ) adalah berpadu atau bercampur antara dua huruf atau memasukkan satu huruf ke dalam huruf yang lain. Maka dari itu, bacaan idgham harus dilafazkan dengan cara meleburkan suatu huruf kepada huruf setelahnya. Terdapat tiga jenis idgham:
+
+1. Idgham mutamathilain  (ﺇﺩﻏﺎﻡ ﻣﺘﻤﺎﺛﻠﻴﻦ - yang serupa) ialah pertemuan antara dua huruf yang sama sifat dan makhrajnya (tempat keluarnya) dal bertemu dal dan sebagainya. Hukum adalah wajib diidghamkan. Contoh: ﻗَﺪ ﺩَﺨَﻠُﻮاْ.
+ 2. Idgham mutaqaribain   (ﺇﺩﻏﺎﻡ ﻣﺘﻘﺎﺭﺑﻴﻦ - yang hampir) ialah pertemuan dua huruf yang sifat dan makhrajnya hampir sama, seperti ba' bertemu mim, qaf bertemu kaf dan tha' bertemu dzal. Contoh: ﻧَﺨْﻠُﻘڪُﻢْ
+ 3. Idgham mutajanisain   (ﺇﺩﻏﺎﻡ ﻣﺘﺠﺎﻧﺴﻴﻦ - yang sejenis) ialah pertemuan antara dua huruf yang sama makhrajnya tetapi tidak sama sifatnya seperti ta' dan tha, lam dan ra' serta dzal dan zha. Contoh: ﻗُﻞ ﺭَﺏﱢ</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qD8-ak-Ycq">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="En7-fe-lb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8J-Fd-4cg">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="7Lm-gO-3bv" kind="show" id="Onl-6v-GvM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pX3-jG-Zbp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="MG9-Qj-KU2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDz-ls-lx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128.8000000000002" y="851.42428785607206"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fla-PC-m4k">
+            <objects>
+                <viewController id="9Sw-v7-AHB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="37x-kj-MnS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-IP-2KZ">
+                                <rect key="frame" x="16" y="150" width="343" height="497"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Tajwīd (تجويد) secara harfiah bermakna melakukan sesuatu dengan elok dan indah atau bagus dan membaguskan,[1] tajwid berasal dari kata Jawwada (جوّد-يجوّد-تجويدا) dalam bahasa Arab. Dalam ilmu Qiraah, tajwid berarti mengeluarkan huruf dari tempatnya dengan memberikan sifat-sifat yang dimilikinya. Jadi ilmu tajwid adalah suatu ilmu yang mempelajari bagaimana cara membunyikan atau mengucapkan huruf-huruf yang terdapat dalam kitab suci al-Quran maupun bukan.
+
+Adapun masalah-masalah yang dikemukakan dalam ilmu ini adalah makharijul huruf (tempat keluar-masuk huruf) [2], shifatul huruf (cara pengucapan huruf), ahkamul huruf (hubungan antar huruf), ahkamul maddi wal qasr (panjang dan pendek ucapan), ahkamul waqaf wal ibtida’ (memulai dan menghentikan bacaan) dan al-Khat al-Utsmani.
+
+Pengertian lain dari ilmu tajwid ialah menyampaikan dengan sebaik-baiknya dan sempurna dari tiap-tiap bacaan ayat al-Quran. Para ulama menyatakan bahwa hukum bagi mempelajari tajwid itu adalah fardhu kifayah tetapi mengamalkan tajwid ketika membaca al-Quran adalah fardhu ain atau wajib kepada lelaki dan perempuan yang mukallaf atau dewasa.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5c0-jd-WKF">
+                                <rect key="frame" x="16" y="20" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="ogX-x2-JhT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNj-cJ-jgA">
+                                <rect key="frame" x="327" y="20" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="qa8-s1-v4A" kind="show" id="h0f-mE-gay"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tAC-oZ-GwG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NrM-eJ-azy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQT-U2-FVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.2" y="1557.5712143928038"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="abstract-background-4.jpg" width="1920" height="1080"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zVr-pJ-0c4"/>
+        <segue reference="nlH-l3-Li0"/>
+        <segue reference="zqT-3x-hoo"/>
+        <segue reference="817-Jf-057"/>
+        <segue reference="gqS-4b-PDx"/>
+        <segue reference="ckv-RX-wdX"/>
+        <segue reference="aV0-Ps-hIv"/>
+        <segue reference="O4v-wf-8bt"/>
+        <segue reference="rwV-4R-P2e"/>
+        <segue reference="5Me-ad-8Di"/>
+        <segue reference="MuQ-yc-3da"/>
+        <segue reference="cD2-tg-G7O"/>
+        <segue reference="s6l-H4-SIp"/>
+    </inferredMetricsTieBreakers>
 </document>
